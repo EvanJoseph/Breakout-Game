@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="Breakout.StartPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Breakout"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,-292,0">
+        <Button x:ConnectionId='1' Content="Normal Mode" HorizontalAlignment="Left" Margin="326,164,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.231,5.338"                      />
+        <Button x:ConnectionId='2' Content="Quit" HorizontalAlignment="Left" Margin="487,164,0,0" VerticalAlignment="Top"                   />
+        <TextBlock x:ConnectionId='3' x:Name="GameOverText" HorizontalAlignment="Left" Margin="487,99,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" RenderTransformOrigin="1.129,0.65"/>
+        <TextBlock x:ConnectionId='4' x:Name="ControlsText" HorizontalAlignment="Left" Margin="343,218,0,0" TextWrapping="Wrap" Text="Controls" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='5' x:Name="MovePaddleText" HorizontalAlignment="Left" Margin="137,243,0,0" TextWrapping="Wrap" Text="Move Paddle: Left and Right Arrow Keys or Left Thumbstick Left and Right or D-Pad Left and Right" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='6' x:Name="SpeedText" HorizontalAlignment="Left" Margin="137,268,0,0" TextWrapping="Wrap" Text="Change Game Speed: Page Up and Page Down Keys or Right Thumbstick Up and Down" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='7' x:Name="QuitText" HorizontalAlignment="Left" Margin="137,293,0,0" TextWrapping="Wrap" Text="Quit Game: Escape Key or Gamepad Back Button" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='8' x:Name="PauseText" HorizontalAlignment="Left" Margin="137,318,0,0" TextWrapping="Wrap" Text="Pause Game: Spacebar or Gamepad Start Button" VerticalAlignment="Top"/>
+        <ListBox x:ConnectionId='9' x:Name="ItemProbSelect" HorizontalAlignment="Left" Height="135" Margin="137,61,0,0" VerticalAlignment="Top" Width="100">
+            <ListBoxItem Content="Low" IsSelected="True"/>
+            <ListBoxItem Content="Medium" IsSelected="True"/>
+            <ListBoxItem Content="High"/>
+        </ListBox>
+        <TextBlock HorizontalAlignment="Left" Margin="137,41,0,0" TextWrapping="Wrap" Text="Item Probability:" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='10' x:Name="PowerUpText" HorizontalAlignment="Left" Margin="281,362,0,0" TextWrapping="Wrap" Text="Power Up/Power Down Effects" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='11' x:Name="IncreasePaddleText" HorizontalAlignment="Left" Margin="137,387,0,0" TextWrapping="Wrap" Text="Increase Paddle Width: Increases the width of the paddle by 25%." VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='12' x:Name="DecreasePaddleText" HorizontalAlignment="Left" Margin="137,412,0,0" TextWrapping="Wrap" Text="Decrease Paddle Width: Decreases the width of the paddle by 25%." VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='13' x:Name="ExtraLifeText" HorizontalAlignment="Left" Margin="137,437,0,0" TextWrapping="Wrap" Text="Extra Life: Adds an extra life. If the ball hits the bottom of the screen a life will be taken away and the ball will rebound." VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='14' x:Name="AddExtraBallText" HorizontalAlignment="Left" Margin="137,462,0,0" TextWrapping="Wrap" Text="Add Extra Ball: Adds an extra ball to the game." VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='15' x:Name="RemoveExtraBallText" HorizontalAlignment="Left" Margin="137,487,0,0" TextWrapping="Wrap" Text="Remove Extra Ball: Remove an extra ball from the game." VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>
+
